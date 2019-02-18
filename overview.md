@@ -119,7 +119,7 @@ math:add(1, 2)
 ```
 
 ### doc tags
-** doc tag list **
+**doc tag list**
 ```
 ** bug: describing a bug
 ** todo: something that needs to be done eventually
