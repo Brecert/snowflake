@@ -33,10 +33,12 @@ todo: describe how/why performance is important
 
 ### Interoperability
 high interoperability with both the hardware and other languages
+
 todo: describe why interoperability is wanted
 
 ## Guiding Principles
 Throughout the design and development of the language, the following principles should be adhered to.
+
 todo: describe the guiding principles
 
 ## Examples
