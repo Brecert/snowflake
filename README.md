@@ -1,3 +1,7 @@
+<!--
+this language description format was inspired by 
+[pony-lang](https://github.com/ponylang/ponylang-website/edit/master/content/discover/index.md) 
+-->
 
 # Snowflake
 > **a fast, minimal and strongly-typed programming language**
@@ -38,6 +42,8 @@ todo: describe why interoperability is wanted
 
 ## Guiding Principles
 Throughout the design and development of the language, the following principles should be adhered to.
+
+* Inherent build system. No separate applications required to configure or build.
 
 todo: describe the guiding principles
 
