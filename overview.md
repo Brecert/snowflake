@@ -25,6 +25,7 @@ a := "world"
 `hello ${a}`
 ** => hello world
 ```
+all strings are an IO
 
 ## functions and calls
 ```sf
@@ -65,4 +66,69 @@ double() -> {
 }
 ** hi
 ** hi
+```
+
+## types
+[superwhiskers] TODO: explain types
+
+## memory management
+[superwhiskers] TODO: explain memory management  
+
+## namespaces and libraries
+```
+lib math {
+  PI := 3.1415
+  
+  fn add(a: int, b: int) {
+    return a + b
+  }
+
+  export { PI, add }
+}
+
+math:PI
+** 3.1415
+
+math:add(1, 2)
+** 3
+```
+
+## comments
+```
+** a comment, it spans one line
+```
+
+### doc tags
+** doc tag list **
+```
+** bug: describing a bug
+** todo: something that needs to be done eventually
+** note: a note that's meant to be displayed as a note
+** fixme: please fix me
+** optimize: describing that the code can be optimized or how to optimize it
+** depricated: a notice meant to warn and tell users what the replacement feature is
+```
+```
+** adds two numbers together
+** `add(1, 2) ** => 3`
+fn add(a: int, b: int): int {
+  a + b
+}
+
+** a minor doc tag
+** todo: change from `std:out` to `std:print`
+fn say(text) {
+  std:out <- text <- newline
+}
+
+** a major doc tag
+** TODO: Finish function
+fn unfinished_function() {
+}
+
+** Assigning a doc tag to a person
+
+** from [brecert] to [superwhiskers] 
+** todo: please add while loops to the language
+fn parser() {}
 ```
