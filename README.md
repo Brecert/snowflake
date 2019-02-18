@@ -1,6 +1,6 @@
 
 # Snowflake
-**a fast, minimal and strongly-typed programming language**
+> **a fast, minimal and strongly-typed programming language**
 
 please view the [real snowflake](https://github.com/Brecert/snowflake)
 this fork adds ideas to the language that may not be accurate to the creators vision
