@@ -15,6 +15,7 @@ fn main() {
 
   ** there is no print statement, instead IO's have the assignment operator that adds to the current stream
   std:out <- "hello world" <- newline
+  ** => "hello world\n"
 }
 ```
 
@@ -36,6 +37,6 @@ fn fib(n: number) {
 
 fn main() {
  std:out <- fib(16)
- ** 987
+ ** => 987
 }
 ```
