@@ -54,6 +54,26 @@ rec(10)
 ** 1 2 3 4 5 6 7 8 9 10 
 ```
 
+## conditionals
+```
+when false {
+  ** something
+} else {
+  ** something else
+}
+
+x := 3
+when x < 3 {
+  std:print <- "less than three"
+} when x < 5 {
+  std:print <- "less than five"
+} else {
+  std:print <- "greater than or equal to five"
+}
+```
+
+unlike traditional languages, only "whens" are used
+
 ## yields and blocks
 ```
 fn double() {
