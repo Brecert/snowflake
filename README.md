@@ -55,7 +55,7 @@ Here's an example of hello world in it
 fn main() {
 
   ** there is no print statement, instead IO's have the assignment operator that adds to the current stream
-  std:out <- "hello world" <- newline
+  std:print <- "hello world"
   ** => "hello world\n"
 }
 ```
@@ -64,9 +64,9 @@ fibonacci sequence example
 ```sf
 ** don't do this
 ** for example only
-type int := int32 | int64
-type float := float32 | float64
-type number := int | float
+type int = int32 | int64
+type float = float32 | float64
+type number = int | float
 
 fn fib(n: number) {
  when n > 2 { 
