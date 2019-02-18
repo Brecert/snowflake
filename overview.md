@@ -7,9 +7,6 @@ pi : float64 = 3.14
 ** or seperate
 pi : float64
 pi = 3.14
-
-** or guess type and cast similar to Go
-pi := 3.14
 ```
 
 ## string
@@ -21,7 +18,7 @@ pi := 3.14
 'a'
 
 ** template literal
-a := "world"
+a = "world"
 `hello ${a}`
 ** => hello world
 ```
@@ -42,7 +39,7 @@ say("hello world")
 ** there are no traditional loops, only recursion
 fn rec(n) {
   when n >= 10 {
-    break
+    return
   }
   
   std:out <- n <- " "
@@ -97,7 +94,7 @@ double() -> {
 ## namespaces and libraries
 ```
 lib math {
-  PI := 3.1415
+  PI = 3.1415
   
   fn add(a: int, b: int) {
     return a + b
