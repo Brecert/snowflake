@@ -20,26 +20,26 @@ It's not meant for high level stuff silly
 todo: flesh out why snowflake is not made for all uses
 
 ### Snowflake priorities
-**Minimal**
-
+> Minimal
 no safety outside of the minimal necessary for people to be able to use it (type safety, etc)
 
 being correct is not an immediate goal of snowflake
 
-**Readability**
+> Readability
 
 todo: describe the goals of readability
 
-**Performance**
+> Performance
 
 todo: describe how/why performance is important
 
-**Interoperability**
+> Interoperability
 
 high interoperability with both the hardware and other languages
+
 todo: describe why interoperability is wanted
 
-### Example
+### Examples
 
 Here's an example of hello world in it
 ```snf
