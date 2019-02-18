@@ -25,17 +25,17 @@ type int := int32 | int64
 type float := float32 | float64
 type number := int | float
 
- fn fib(n: number) {
-  when n > 2 { 
-    return fib(n - 1) + fib(n - 2)
-  }
-  else {
-    return n
-  }
+fn fib(n: number) {
+ when n > 2 { 
+   return fib(n - 1) + fib(n - 2)
  }
- 
- fn main() {
-  std:out <- fib(16)
-  ** 987
+ else {
+   return n
  }
+}
+
+fn main() {
+ std:out <- fib(16)
+ ** 987
+}
 ```
