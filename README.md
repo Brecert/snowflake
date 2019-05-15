@@ -52,33 +52,26 @@ todo: describe the guiding principles
 Here's an example of hello world in it
 ```sf
 ** this is a comment
-fn main() {
+fn main {
 
   ** there is no print statement, instead IO's have the assignment operator that adds to the current stream
-  std:print <- "hello world"
+  std.out <- "hello world\n"
   ** => "hello world\n"
 }
 ```
 
 fibonacci sequence example
 ```sf
-** don't do this
-** for example only
-type int = int32 | int64
-type float = float32 | float64
-type number = int | float
-
-fn fib(n: number) {
- when n > 2 { 
+fn fib(n: i64) {
+ if n > 2 { 
    return fib(n - 1) + fib(n - 2)
- }
- else {
+ } else {
    return n
  }
 }
 
-fn main() {
- std:out <- fib(16)
+fn main {
+ ?println(fib(16))
  ** => 987
 }
 ```
